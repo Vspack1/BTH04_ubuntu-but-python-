@@ -1,0 +1,9 @@
+echo -n "Nhap chuoi"
+read s
+
+sotu=$(echo $s | wc -w)
+echo "Chuoi $s co $sotu tu"
+for word in $s
+do
+    echo $word
+done

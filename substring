@@ -1,0 +1,9 @@
+s=$1
+vitri=$2
+sokt=$3
+leng=${#s}
+if [ vitri -le 0 ] || [ $vitri -ge $leng ] || [ $sokt -gt $leng ]; then
+    echo "Gia tri nhap khong hop le"
+    exit 0
+fi
+echo "Chuoi con cua $s la ${s:vitri:sokt}"

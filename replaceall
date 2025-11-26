@@ -1,0 +1,5 @@
+s=$1
+s1=$2
+s2=$3
+replaceall=${s//$s1/$s2}
+echo $replaceall

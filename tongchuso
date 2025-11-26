@@ -1,0 +1,14 @@
+sum_digit()
+{
+    local n=$1
+    local sum=0
+    while [ $n -gt 0 ]
+    do
+        du=`expr $n % 10`
+        n=`expr $n / 10`
+        sum=`expr $sum + $du`
+    done
+    echo $sum
+}
+sum=$(sum_digit $1)
+echo "Tong chu so cua $1 la $sum"
